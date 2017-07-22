@@ -1,0 +1,15 @@
+
+{
+  "lambda_name": "BitstockPump",
+  "aws_region": "eu-west-1",
+  "runtime": "python3.6",
+  "role": "arn:aws:iam::170591861571:role/service-role/mylambdatest",
+  "vpc_subnet_ids": ["subnet-98b646c0"],
+  "vpc_sec_group_ids": ["sg-212ba246"],
+  "filename": "test_lambda",
+  "lambda_dir": "src",
+  "handler_name": "main",
+  "env_vars": {
+    "foo": "foo"
+  }
+}

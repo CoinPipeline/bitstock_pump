@@ -1,0 +1,8 @@
+---
+- name: Deploy Bitstock Pump Lambda
+  hosts: localhost
+  connection: local
+  gather_facts: False
+
+  roles:
+    - lambda-deploy

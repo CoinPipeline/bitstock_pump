@@ -1,0 +1,9 @@
+language: python
+python:
+  - "2.7"
+script:
+  - pip install -r requirements.txt -t src
+  - pip install -r deploy_requirements.txt
+  - ansible-galaxy install git+https://github.com/spetex/lambda-deploy,master --roles-path .
+  - echo "localhost" > inventory
+  - ansible-playbook -i inventory deploy.yml --extra-vars="@config.json"
