@@ -6,9 +6,9 @@
   "role": "arn:aws:iam::170591861571:role/service-role/mylambdatest",
   "vpc_subnet_ids": ["subnet-98b646c0"],
   "vpc_sec_group_ids": ["sg-212ba246"],
-  "filename": "pumps",
+  "filename": "scrape_to_s3",
   "lambda_dir": "src/.",
-  "handler_name": "get_transactions",
+  "handler_name": "scrape_and_write_raw",
   "env_vars": {
     "foo": "foo"
   }
