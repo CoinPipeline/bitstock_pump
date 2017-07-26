@@ -6,9 +6,9 @@
   "role": "arn:aws:iam::170591861571:role/service-role/mylambdatest",
   "vpc_subnet_ids": ["subnet-98b646c0"],
   "vpc_sec_group_ids": ["sg-212ba246"],
-  "filename": "test_lambda",
-  "lambda_dir": "src",
-  "handler_name": "main",
+  "filename": "pumps",
+  "lambda_dir": "src/.",
+  "handler_name": "get_transactions",
   "env_vars": {
     "foo": "foo"
   }
